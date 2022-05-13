@@ -3,16 +3,14 @@ import nltk
 nltk.download('punkt')
 from nltk.stem import PorterStemmer
 
-paragraph = '''HFEKIFGREIFFEDJHFG. WIUGFIWUGFIWUFIUF. UGEDHJWJWEJWEK hey im using whatsapp id786756e75e76ruyhyughjjklklklllk;llkkkjjjiuhuuyuuyyyu  uftyytyuuhjnb  bjnhhjb n hbhggyghh bnghfg'''
+paragraph = '''Programmers program with programming languages. This is nicest and beautiful place'''
 Stemmer = PorterStemmer()
 
 sentence = nltk.sent_tokenize(paragraph)
 for sent in sentence:
-  Stemmer.stem(sent)
-  print(sent)
+  print(Stemmer.stem(sent))
 
 words = nltk.word_tokenize (paragraph)
 
 for word in words:
-  Stemmer.stem(word)
-  print(word)
+  print(Stemmer.stem(word))
